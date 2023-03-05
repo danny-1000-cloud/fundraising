@@ -1,0 +1,309 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-decoration: 0;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+    height: 2px;
+}
+  
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px #99caab;
+    border-radius: 10px;
+}
+  
+::-webkit-scrollbar-thumb {
+    background: #3ea175;
+    border-radius: 10px;
+}
+  
+::-webkit-scrollbar-thumb:hover {
+    background: #035946;
+}
+
+header{
+    background-color: #99caab;
+    padding: 10px;
+}
+
+.navbar-container{
+    text-align: center;
+    padding: 2px;
+}
+
+.logo{
+    color: #035946;
+}
+
+.logo span{
+    color: #fff;
+    padding: 8px;
+}
+
+.container{
+    background: linear-gradient(rgba(0,0,0,0.65),rgba(0,0,0,0.65)),url(background.jpg);
+    background-size: cover;
+    background-position: center;
+    filter: brightness(80%);
+    height: 100vh;
+    width: 100%;
+}
+
+.hero{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.hero h1, h2{
+    color: #fff;
+    padding: 10px 0;
+    letter-spacing: 2px;
+    line-height: 40px;
+}
+
+.hero h1{
+    font-size: 2.5rem;
+}
+
+.account a{
+    padding: 10px 40px;
+    color: #fff;
+    background-color: #035946;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 2rem;
+}
+
+.account a:hover{
+    background-color: #fff;
+    color: #035946;
+}
+
+/* Fund-Section */
+
+.fund-container{
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+.top-text{
+    padding: 2rem 20rem;
+    margin: auto 0;
+    text-align: center;
+    letter-spacing: 1px;
+    line-height: 30px;
+    font-family: sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.account{
+    padding: 3rem 4rem;
+}
+
+.account p{
+    padding-bottom: 1rem;
+    font-size: 1.4rem;
+    font-weight: 600;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+    line-height: 30px;
+}
+
+.account text{
+    margin-top: 3rem;
+    font-size: 1rem;
+    font-family: sans-serif;
+    font-weight: 600;
+}
+
+.container-flex{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.social{
+    padding: 3rem;
+}
+
+.social h3, p{
+    letter-spacing: 1px;
+    line-height: 30px;
+    font-weight: 600;
+}
+
+.social p{
+    padding-bottom: 1.5rem;
+}
+
+.social ul{
+    display: flex;
+    gap: 3rem;
+}
+
+.social ul li{
+    list-style: none;
+}
+
+.social ul li a{
+    list-style: none;
+    text-decoration: none;
+}
+
+.second-social{
+    padding: 3rem;
+}
+
+.second-social h3, p{
+    letter-spacing: 1px;
+    line-height: 30px;
+    font-weight: 600; 
+}
+
+.second-social ul{
+    display: flex;
+    gap: 3rem;
+}
+
+.second-social p{
+    padding-bottom: 1.5rem;
+}
+
+.second-social ul li{
+    list-style: none;
+    text-decoration: none;
+}
+
+.contacts{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.contacts h1{
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    line-height: 35px;
+}
+
+@media only screen and (max-width: 769px) {
+    .logo{
+        font-size: 1.3rem;
+    }
+
+    .hero h1{
+        font-size: 1.8rem;
+    }
+
+    .hero h2{
+        font-size: 1.2rem;
+        padding-bottom: 18px;
+    }
+
+    .top-text{
+        padding: 2rem 2rem;
+        font-size: 14px;
+    }
+
+    .account{
+        align-items: center;
+        text-align: center;
+    }
+    
+    .account p{
+        font-size: 1.2rem;
+    }
+
+    .account text{
+        font-size: 14px;
+    }
+
+    .container-flex{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .social{
+        padding: 1.5rem;
+    }
+    
+    .social h3, p{
+        letter-spacing: 1px;
+        line-height: 30px;
+        font-weight: 600;
+    }
+    
+    .social p{
+        padding-bottom: 1.5rem;
+    }
+    
+    .social ul{
+        display: flex;
+        gap: 1rem;
+    }
+    
+    .social ul li{
+        list-style: none;
+    }
+    
+    .social ul li a{
+        list-style: none;
+        text-decoration: none;
+    }
+    
+    .second-social{
+        padding: 1rem;
+    }
+    
+    .second-social h3, p{
+        letter-spacing: 1px;
+        line-height: 30px;
+        font-weight: 600; 
+    }
+    
+    .second-social ul{
+        display: flex;
+        gap: 2rem;
+    }
+    
+    .second-social p{
+        padding-bottom: 1.5rem;
+    }
+    
+    .second-social ul li{
+        list-style: none;
+        text-decoration: none;
+    }
+    
+    .contacts{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+    
+    .contacts h1{
+        font-size: 0.8rem;
+        letter-spacing: 1px;
+        line-height: 35px;
+    }
+    
+}
