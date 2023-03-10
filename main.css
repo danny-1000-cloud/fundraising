@@ -60,7 +60,7 @@ header{
     transform: translate(-50%, -50%);
 }
 
-.hero h1, h2{
+.hero h1, h2, h3{
     color: #fff;
     padding: 10px 0;
     letter-spacing: 2px;
@@ -68,7 +68,7 @@ header{
 }
 
 .hero h1{
-    font-size: 2.5rem;
+    font-size: 1.5rem;
 }
 
 .account a{
@@ -87,27 +87,34 @@ header{
     color: #035946;
 }
 
-/* Fund-Section */
+/* Payment section */
 
-.fund-container{
-    background-color: #fff;
+.payment-section{
+    background: #090a1a;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .top-text{
     padding: 2rem 20rem;
     margin: auto 0;
     text-align: center;
+    text-align: center;
     letter-spacing: 1px;
     line-height: 30px;
     font-family: sans-serif;
     font-size: 1rem;
     font-weight: 700;
+    color: #fff;
+
 }
 
 .account{
     padding: 3rem 4rem;
+    color: #fff;
 }
 
 .account p{
@@ -115,7 +122,7 @@ header{
     font-size: 1.4rem;
     font-weight: 600;
     font-family: sans-serif;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
     line-height: 30px;
 }
 
@@ -124,6 +131,44 @@ header{
     font-size: 1rem;
     font-family: sans-serif;
     font-weight: 600;
+    letter-spacing: 2px;
+}
+
+/* Fund-Section */
+
+.fund-section{
+    background: #090a1a;
+}
+
+.fund-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.list{
+    width: 60%;
+    margin: 0 17rem;
+    background: #fff;
+    padding: 20px 30px;
+    border-radius: 10px;
+}
+
+.list-details ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0.8rem;
+    font-weight: 600;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #090a1a;
+}
+
+.talks{
+    padding: 0.8rem;
+    font-weight: 600;
+    line-height: 1rem;
 }
 
 .container-flex{
@@ -137,10 +182,11 @@ header{
     padding: 3rem;
 }
 
-.social h3, p{
+.social h1, p{
     letter-spacing: 1px;
     line-height: 30px;
     font-weight: 600;
+    color: #fff;
 }
 
 .social p{
@@ -165,10 +211,11 @@ header{
     padding: 3rem;
 }
 
-.second-social h3, p{
+.second-social h1, p{
     letter-spacing: 1px;
     line-height: 30px;
-    font-weight: 600; 
+    font-weight: 600;
+    color: #fff; 
 }
 
 .second-social ul{
@@ -197,6 +244,119 @@ header{
     font-size: 1.2rem;
     letter-spacing: 1px;
     line-height: 35px;
+    color: #fff;
+}
+
+@media only screen and (max-width: 800px) {
+    .top-text{
+        padding: 2rem 8rem;
+        margin: auto 0;
+        text-align: center;
+        letter-spacing: 1px;
+        line-height: 30px;
+        font-family: sans-serif;
+        font-size: 1rem;
+        font-weight: 700;  
+    }
+
+    .list{
+        width: 80%;
+        margin: 0 5rem;
+        padding: 10px 20px;
+    }
+
+    .list-details ul{
+        padding: 0.5rem;
+        font-size: 1rem;
+        margin-bottom: 0.8rem;
+    }
+
+    .talks{
+        font-size: 0.9rem;
+        padding: 0.1rem;
+    }
+
+    .container-flex{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .account{
+        align-items: center;
+        text-align: center;
+        margin-top: -3rem;
+    }
+
+    .social{
+        padding: 1.2rem;
+    }
+    
+    .social h3, p{
+        letter-spacing: 1px;
+        line-height: 30px;
+        font-weight: 600;
+    }
+    
+    .social p{
+        padding-bottom: 1.5rem;
+    }
+    
+    .social ul{
+        display: flex;
+        gap: 1rem;
+    }
+    
+    .social ul li{
+        list-style: none;
+    }
+    
+    .social ul li a{
+        list-style: none;
+        text-decoration: none;
+    }
+    
+    .second-social{
+        padding: 1rem;
+    }
+    
+    .second-social h1, p{
+        letter-spacing: 1px;
+        line-height: 30px;
+        font-weight: 600; 
+        font-size: 1.2rem;
+    }
+    
+    .second-social ul{
+        display: flex;
+        gap: 2rem;
+    }
+    
+    .second-social p{
+        padding-bottom: 1.5rem;
+    }
+    
+    .second-social ul li{
+        list-style: none;
+        text-decoration: none;
+    }
+    
+    .contacts{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        margin-bottom: 6rem;
+    }
+    
+    .contacts h1{
+        font-size: 1rem;
+        letter-spacing: 1px;
+        line-height: 35px;
+    }
 }
 
 @media only screen and (max-width: 769px) {
@@ -240,14 +400,21 @@ header{
         justify-content: center;
     }
 
+    .list{
+        width: 80%;
+        margin: 0 4rem;
+        padding: 10px 20px;
+    }
+
     .social{
         padding: 1.5rem;
     }
     
-    .social h3, p{
+    .social h1, p{
         letter-spacing: 1px;
         line-height: 30px;
         font-weight: 600;
+        font-size: 1.2rem;
     }
     
     .social p{
@@ -306,4 +473,54 @@ header{
         line-height: 35px;
     }
     
+}
+
+@media only screen and (max-width: 600px) {
+
+} 
+
+@media only screen and (max-width: 360px) {
+    .hero h1{
+        font-size: 1rem;
+        padding: 5px 0;
+        letter-spacing: 1px;
+        line-height: 30px;
+    }
+
+    .hero h2{
+        font-size: 1rem;
+        padding: 5px 0;
+        letter-spacing: 1px;
+        line-height: 30px;
+    }
+
+    .top-text{
+        font-size: 0.7rem;
+    }
+
+    .account text{
+        font-size: 12.5px;
+    }
+
+    .list{
+        width: 90%;
+        margin: 0 1rem;
+        padding: 10px 20px;
+    }
+
+    .details li{
+        font-size: 12px;
+    }
+
+    .contacts h1{
+        font-size: 0.9rem;
+        letter-spacing: 0px;
+        line-height: 30px;
+    }
+    .social h1, p{
+        letter-spacing: 1px;
+        line-height: 30px;
+        font-weight: 600;
+        font-size: 1rem;
+    }
 }
